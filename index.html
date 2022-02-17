@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <h3 class="head">Password Generator</h3>
+        <h5 class="click" id="result">Random Password</h5>
+        <button class="btn-clip" id="clipboard" style="background-color: rgb(68, 64, 64); margin-bottom: 5px; cursor: pointer;border-radius: 5px;">Copy to Clipboard</button>
+        <div class="words">
+            <label id="label" ><small class="ln">LENGTH </small><input id="count" value="0" disabled></label><br>
+            <div class="volume"> <span class="min">4 </span><input  type="range" id="length" min="4" max="30"><span class="max"> 30</span></div>
+        </div>
+        <p class="setting">SETTINGS</p>
+        <div class="toggle" >Include Uppercase
+            <label class="switch" for="uppercase">
+                <input type="checkbox" id="uppercase" checked>
+                <span class="slider round" style="font-size: smaller; padding-top: 6px;"></span>
+            </label>
+        </div>
+        <div class="toggle" >Include Lowercase
+            <label class="switch" for="lowercase" > 
+                <input type="checkbox" id="lowercase" checked>
+                <span class="slider round" style="font-size: smaller; padding-top: 6px;"></span>
+            </label>
+        </div>
+        <div class="toggle" >Include Numbers
+            <label class="switch" for="numbers">
+                <input type="checkbox" id="numbers" checked>
+                <span class="slider round"style="font-size: smaller; padding-top: 6px;"></span>
+            </label>
+        </div>
+        <div class="toggle" >Include Symbols
+            <label class="switch" for="symbols">
+                <input type="checkbox" id="symbols" checked>
+                <span class="slider round" style="font-size: smaller; padding-top: 6px;"></span>
+            </label>
+        </div>
+        <div class="last">
+           <button type="submit" class="btn" id="generate" >GENERATE PASSWORD</button>
+        </div>
+        <div class="last-reset">
+            <button type="reset" class="btn-3" id="reset" >RESET</button>
+         </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
